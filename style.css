@@ -1,7 +1,87 @@
-html{
+body{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 75vw;
+    margin: auto;
+}
+
+#header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-body{
+#header-img{
+    width: auto;
+    max-height: 100px;
+}
+
+#price{
+    width: 80%;
+}
+
+#price-table{
+    height: 200px;
+    margin: 30px auto;
+    max-width: 75%;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*.price-card-price{*/
+/*    font-size: 3em;*/
+/*}*/
+
+/*.price-card-name{*/
+/*    font-size: 2em;*/
+/*}*/
+
+.price-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 30%;
+    height: 100%;
+}
+#nav-bar > ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#nav-bar{
+    width: 50%;
+
+}
+
+
+#videos{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: auto;
+}
+
+.video{
+    height: 300px;
+    margin: 30px;
+}
+.nav-link{
+
+}
+
+#hero{
+    margin: 30px auto 60px auto;
+}
+
 
 }

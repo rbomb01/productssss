@@ -1,16 +1,142 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>Product Page</title>
 </head>
 <body>
+<div class="dropdown is-hoverable">
+    <div class="dropdown-trigger">
+        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+            <span>Penguin Facts</span>
+            <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+        </button>
+    </div>
+    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+            <a href="#" class="dropdown-item">
+                1. Giant penguins once roamed the planet
+            </a>
+            <a class="dropdown-item">
+                2. Penguins are media superstars
+            </a>
+            <a href="#" class="dropdown-item">
+                3. Penguins need our help
+            </a>
+            <a href="#" class="dropdown-item">
+                4. Penguin poo is visible from space
+            </a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">
+                With a divider
+            </a>
+        </div>
+    </div>
+</div>
+
+</section>
+
 <!--Your code goes below this line-->
+<header id="header">
+    <img alt="Penguins Need Help"
+         id="header-img"
+         src="https://1000logos.net/wp-content/uploads/2020/11/Club-Penguin-Logo.png"/>
+
+    <nav id="nav-bar">
+        <ul>
+            <li><a class="nav-link" href="#Big Penguins">Big Penguins</a></li>
+            <li><a class="nav-link" href="#Small Penguins">Small Penguins</a></li>
+            <li><a class="nav-link" href="#Medium Penguins">Medium Penguins</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<section id="hero">
+    <h2>Help One Today</h2>
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+                type="email"
+        />
+        <input class="btn" id="submit" type="submit" value="Get Started"/>
+
+    </form>
+</section>
+
+
+<section id="videos">
+
+    <div class="video" id="Small Penguins">
+        <iframe
+                allowfullscreen
+                frameborder="0"
+                height="315"
+                id="how"
+                src="https://www.youtube.com/embed/k22Gg13ahDc"
+        ></iframe>
+    </div>
+    <div class="video" id="Big Penguins">
+        <iframe
+                allowfullscreen
+                frameborder="0"
+                height="315"
+                id="it"
+                src="https://www.youtube.com/embed/OF0w9z_JUJs"
+        ></iframe>
+    </div>
+    <div class="video" id="Medium Penguins">
+        <iframe
+                allowfullscreen
+                frameborder="0"
+                height="315"
+                id="works"
+                src="https://www.youtube.com/embed/rbzxxbuk3sk"
+        ></iframe>
+    </div>
+</section>
+<section id="price">
+    <div id="price-table">
+        <div class="price-card card">
+            <header class="card-header">
+
+            <h1 class="price-card-price card-header-title">10</h1>
+            </header>
+            <h2 class="price-card-name">Minimum price</h2>
+            <p class="price-card-description card-content">Not so Poggers<p>
+         </p>
+            <button class="button">Donate</button>
+        </div>
+        <div class="price-card card">
+            <header class="card-header">
+
+                <h1 class="price-card-price card-header-title">10</h1>
+            </header>
+            <h2 class="price-card-name">Mid price</h2>
+            <p class="price-card-description card-content">Poggers</p><p>
+        </p>
+            <button class="button">Donate</button>
+        </div>
+        <div class="price-card card">
+            <header class="card-header">
+
+                <h1 class="price-card-price card-header-title">10</h1>
+            </header>
+            <h2 class="price-card-name">Best Price</h2>
+            <p class="price-card-description card-content">Big Poggers<p>
+        </p>
+            <button class="button">Donate</button>
+        </div>
 
 <!--Your code goes above this line-->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
